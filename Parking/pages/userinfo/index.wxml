@@ -1,0 +1,16 @@
+<view class="container">
+  <van-cell-group>
+  <van-field
+    model:value="{{ nickname }}"
+    center
+    label="昵称"
+    placeholder="请输入新的昵称"
+    border="{{ false }}"
+    use-button-slot
+  >
+    <van-button slot="button" size="small" type="primary"  bind:click="alter_nick">
+      修改
+    </van-button>
+  </van-field>
+</van-cell-group>
+</view>

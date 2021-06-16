@@ -1,0 +1,64 @@
+<view class="container">
+  <view class="home_hd">
+    <swiper indicator-dots="true" autoplay="false" interva="3000">
+      <swiper-item item-id="1"><image src="/image/ecut/1.jpg" mode="aspectFill"></image></swiper-item>
+      <swiper-item item-id="2"><image src="/image/ecut/2.jpg" mode="aspectFill"></image></swiper-item>
+      <swiper-item item-id="3"><image src="/image/ecut/3.jpg" mode="aspectFill"></image></swiper-item>
+    </swiper>
+  </view>
+  <view class="home_bd">
+    <view class="technology">
+      <view class="one">
+        <view class="order" bindtap="reserve">
+          <text class="order_text">预约</text>
+          <image class="order_image" mode="aspectFit" src="/image/reserve.png"></image>
+        </view>
+      </view>
+      <view class="two">
+        <view class="order"  bindtap="car">
+          <text class="order_text">我的车</text>
+          <image class="order_image" mode="aspectFit" src="/image/car.png"></image>
+        </view>
+      </view>
+      <view class="three">
+        <view class="order" bindtap="order">
+          <text class="order_text">订单</text>
+          <image class="order_image" mode="aspectFit" src="/image/record.png"></image>
+        </view>
+      </view>
+      <view class="four">
+        <view class="order">
+          <text class="order_text">待处理</text>
+          <image class="order_image" mode="aspectFit" src="/image/handle.png"></image>
+        </view>
+      </view>
+    </view>
+  </view>
+  <view class="home_ft">
+    <view class="text_ft">常用场地及时间</view>
+    <view class="used_time">
+      <view class="place">{{hobby[0].used_place}}</view>
+      <view class="point">{{hobby[0].start_time}}:00~{{hobby[0].end_time}}:00</view>
+      <view class="setting" bindtap="handle_setting">
+        <image src="/image/setting.png"></image>
+      </view>
+      <view class="define" bindtap="go_reserve">
+        <image src="/image/define.png"></image>
+      </view>
+    </view>
+  </view>
+  <view class="home_order">
+    <view class="text_ft">进行中的订单</view>
+    <!-- 循环输出进行中的订单 -->
+    <view class="time" wx:for="{{order}}" wx:for-item="item"  wx:key="reserve_id">
+      <view class="place">{{item.lot_name}}</view>
+      <view class="point">{{item.park_date}} {{item.arrive_time}}:00~{{item.leave_time}}:00</view>
+      <view class="setting" bindtap="modify_order" data-index="{{item}}">
+        <image src="/image/modify.png"></image>
+      </view>
+      <view class="define"  bindtap="delete_order" data-index="{{item}}">
+        <image src="/image/remove.png"></image>
+      </view>
+    </view>
+  </view>
+</view>

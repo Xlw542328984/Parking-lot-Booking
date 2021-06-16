@@ -1,0 +1,23 @@
+<view>
+  <van-cell title="地点" value="{{ lot_name }}" bind:click="showPlacePopup" />
+  <van-popup show="{{ lotshow }}" bind:close="onArriveClose" round position="bottom">
+    <van-picker show-toolbar title="标题" columns="{{ columns }}" bind:confirm="lot" value="{{lot_name}}"/>
+  </van-popup>
+</view>
+<view>
+  <van-cell title="选择日期" value="{{ park_date }}" bind:click="showdatePopup" />
+  <van-calendar min-date="{{ minDate }}" max-date="{{ maxDate }}" color="#9385FB" show="{{ dateshow }}" bind:close="onDateClose" bind:confirm="park_date"/>
+</view>
+<view>
+<van-cell title="开始时间" value="{{ arrive_time }}" bind:click="showArrivePopup" />
+<van-popup show="{{ arriveshow }}" bind:close="onArriveClose"  round position="bottom">
+  <van-picker show-toolbar title="抵达时间" columns="{{ time }}" bind:confirm="arrive" value="{{arrive_time}}"/>
+</van-popup>
+</view>
+<view>
+<van-cell title="结束时间" value="{{ leave_time }}" bind:click="showLeavePopup" />
+<van-popup show="{{ leaveshow }}" bind:close="onLeaveClose" round position="bottom">
+  <van-picker show-toolbar title="驶离时间" columns="{{ time }}" bind:confirm="leave" value="{{leave_time}}"/>
+</van-popup>
+</view>
+<van-button color="#9385FB" round type="primary" bind:click="reserve">预约</van-button>

@@ -1,0 +1,19 @@
+<view>
+  <van-cell title="地点" value="{{ used_place }}" bind:click="showPlacePopup" />
+  <van-popup show="{{ lotshow }}" bind:close="onArriveClose" round position="bottom">
+    <van-picker show-toolbar title="停车点" columns="{{ columns }}" bind:confirm="used" value="{{used_place}}"/>
+  </van-popup>
+</view>
+<view>
+<van-cell title="抵达时间" value="{{ start_time }}" bind:click="showArrivePopup" />
+<van-popup show="{{ arriveshow }}" bind:close="onArriveClose"  round position="bottom">
+  <van-picker show-toolbar title="开始时间" columns="{{ time }}" bind:confirm="start" value="{{start_time}}"/>
+</van-popup>
+</view>
+<view>
+<van-cell title="驶离时间" value="{{ end_time }}" bind:click="showLeavePopup" />
+<van-popup show="{{ leaveshow }}" bind:close="onLeaveClose" round position="bottom">
+  <van-picker show-toolbar title="结束时间" columns="{{ time }}" bind:confirm="end" value="{{end_time}}"/>
+</van-popup>
+</view>
+<van-button color="#9385FB" round type="primary" bind:click="define">确定</van-button>

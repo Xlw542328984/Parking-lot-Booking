@@ -1,0 +1,15 @@
+<view class="container">
+  <view class="login-container">
+    <view class="login-box">
+      <form action="post" bindsubmit="formSubmit">
+        <label>手机号码</label>
+        <input type="text" name="username" model:value="{{username}}" bindinput='blurPhone'/>
+        <label>密码</label>
+        <input type="password" name="password" model:value="{{password}}" bindinput="empty"/>
+        <label>重复密码</label>
+        <input type="password" name="renewpassword" model:value="{{repassword}}" bindinput="empty"/>
+        <button class="login-btn" form-type="submit">注册</button>
+      </form>
+    </view>
+  </view>
+</view>

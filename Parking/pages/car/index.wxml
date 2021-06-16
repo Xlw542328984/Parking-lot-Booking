@@ -1,0 +1,31 @@
+<view class="container">
+  <view class="car">
+    <view class="car_add">
+      <view class="add" bindtap="go_add">
+        +添加车辆信息
+      </view>
+    </view>
+    <view class="car_bd">
+      <scroll-view scroll-y>
+        <view class="car_card" wx:for="{{car}}" wx:for-item="item"  wx:key="car_id">
+          <view class="car_number">{{item.car_number}}</view>
+          <view class="car_brand">{{item.car_brand}}</view>
+          <view class="setting" bindtap="go_delete" data-index="{{item.car_id}}">
+            <image src="/image/remove.png"></image>
+          </view>
+          <view class="define" >
+            <radio-group bindchange="radioChange">
+              <radio color="#9385FB" value="{{item.car_id}}" checked="{{item.ischecked}}" bindtap="go_modify" data-index="{{item.car_id}}"/>
+            </radio-group>
+          </view>
+        </view>
+      </scroll-view>
+    </view>
+  </view>
+</view>
+
+
+
+
+
+

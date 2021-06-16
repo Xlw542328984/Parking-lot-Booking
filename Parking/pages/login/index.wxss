@@ -1,0 +1,50 @@
+.container {
+  background-color: #9385FB;
+}
+
+.login-container{
+  padding: 0 10%;
+  height: 100%;
+}
+.title{
+  font-size: large;
+  text-align: center;
+  padding-top: 10%;
+  font-weight: bold;
+}
+.login-box{
+  /* margin-top: 10%; */
+  position: relative;
+  top: 20%;
+  padding: 10% 5%;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 4px #888888;
+}
+.login-box>input{
+  margin: 5% 0 8% 0;
+  border-bottom: 1rpx solid lightgray;
+}
+.login-btn{
+  width: 50%!important;
+  background-color: #9385FB;
+  color: white;
+  font-weight: normal;
+  margin-top: 10rpx;
+  margin-bottom: 10rpx;
+}
+
+
+.login-other {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.register-text{
+  color: #9385FB;
+}
+
+.reinstall-text{
+  color: #9385FB;
+}

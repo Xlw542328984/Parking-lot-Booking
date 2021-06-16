@@ -1,0 +1,15 @@
+<van-cell-group>
+  <van-field
+    label="车牌号"
+    model:value="{{ car_number }}"
+    placeholder="请输入车牌号"
+    border="{{ false }}"
+  />
+  <van-field
+    label="品牌"
+    model:value="{{ car_brand }}"
+    placeholder="请输入车品牌"
+    border="{{ false }}"
+  />
+  <van-button color="#9385FB" round type="primary" bind:click="add">添加</van-button>
+</van-cell-group>

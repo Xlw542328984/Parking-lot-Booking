@@ -1,0 +1,25 @@
+<view class="container">
+  <view class="order_hd">
+    <view class="total_order" bindtap="total_order">全部订单</view>
+    <view class="mid_order" bindtap="going_order">进行中</view>
+    <view class="Finished_order" bindtap="finished_order">已完成</view>
+  </view>
+  <view class="order_bd">
+    <scroll-view scroll-y>
+        <view class="order_card" wx:for="{{order}}" wx:for-item="item"  wx:key="reserve_id">
+          <view class="order_content">
+            <view class="order_car_number">{{item.car_number}}</view>
+            <view class="order_lot_name">{{item.lot_name}}</view>
+            <view class="order_time" >{{item.park_date}} {{item.arrive_time}}:00~{{item.leave_time}}:00</view>
+            <view class="three-line">一一一一一一一一一一一一一一一一一一一</view>
+            <view class="delete_text" bindtap="delete_order" data-index="{{item.reserve_id}}">删除</view>
+            <view class="finish_text">
+              <radio-group bindchange="radioChange">
+                <radio color="#9385FB" value="{{item.reserve_id}}" checked="{{item.isfinished}}" bindtap="order_modify" data-index="{{item.reserve_id}}"/>
+              </radio-group>
+            </view>
+          </view>
+        </view> 
+      </scroll-view>
+  </view>
+</view>

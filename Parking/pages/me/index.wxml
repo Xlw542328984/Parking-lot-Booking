@@ -1,0 +1,19 @@
+<view class="container">
+  <view class="me_hd" bindtap="userinfo">
+    <view class="avatar">
+      <image class="avator" src="/image/user-unlogin2.png"/>
+    </view>
+    <view class="info">
+      <view>{{nickname}}</view>
+      <view>{{username}}</view>
+    </view>
+  </view>
+  <view class="me_bd">
+    <van-cell-group>
+      <van-cell is-link title="我的爱车" url="/pages/car/index"/>
+      <van-cell is-link title="我的订单" url="/pages/order/index"/>
+      <van-cell is-link title="退出" link-type="reLaunch" url="/pages/login/index"/>
+    </van-cell-group>
+  </view>
+  <view class="me_ft"></view>
+</view>

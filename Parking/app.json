@@ -1,0 +1,53 @@
+{
+  "pages":[
+    "pages/login/index",
+    "pages/register/index",
+    "pages/reinstall/index",
+    "pages/me/index",
+    "pages/userinfo/index",
+    "pages/index/index",
+    "pages/order/index",
+    "pages/reserve/index",
+    "pages/car/index",
+    "pages/addcar/index",
+    "pages/used/index",
+    "pages/modify/index"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#9385FB",
+    "navigationBarTitleText": "东华理工大学停车场",
+    "navigationBarTextStyle":"white"
+  },
+  
+  "tabBar": {
+    "color": "#000000",
+    "selectedColor": "#9385FB",
+    "borderStyle": "white",
+    "backgroundColor": "#ffffff",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "iconPath": "image/home.png",
+        "selectedIconPath": "image/home-o.png",
+        "text": "主页"
+      },
+      {
+        "pagePath": "pages/me/index",
+        "iconPath": "image/icon-me_normal.png",
+        "selectedIconPath": "image/icon-me_selcted.png",
+        "text": "我的"
+      }
+    ]
+  },
+  "usingComponents": {
+  "van-cell": "@vant/weapp/cell/index",
+  "van-cell-group": "@vant/weapp/cell-group/index",
+  "van-field": "@vant/weapp/field/index",
+  "van-button": "@vant/weapp/button/index",
+  "van-popup": "@vant/weapp/popup/index",
+  "van-picker": "@vant/weapp/picker/index",
+  "van-calendar": "@vant/weapp/calendar/index"
+  },
+  "sitemapLocation": "sitemap.json"
+}

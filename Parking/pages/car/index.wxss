@@ -1,0 +1,68 @@
+.container {
+}
+
+.car {
+  height: 100vh;
+}
+
+.car_add {
+  background-color: #9385FB;
+  padding: 10rpx;
+}
+
+.add {
+  height: 50rpx;
+  background-color: #fff;
+  border-radius: 20px;
+  display: flex;
+  align-items:center;
+  justify-content: center;
+}
+
+.car_bd {
+  display: flex;
+  height: calc( 100vh - 70rpx );
+}
+
+.car_card {
+  display: flex;
+  flex-direction: row;
+  margin: 10px;
+  padding: 10px;
+  border: 2rpx solid #9385FB;
+  border-radius: 10px;
+}
+
+.car_icon {
+  width: 30rpx;
+  height: 30rpx;
+}
+
+.car_number {
+  flex: 2;
+  margin: 36rpx 10rpx 30rpx 10rpx;
+}
+
+.car_brand {
+  flex: 2;
+  margin: 36rpx 10rpx 30rpx 10rpx;
+}
+
+.setting {
+  flex: 1;
+  margin: 40rpx;
+}
+
+.setting image{
+  width: 50rpx;
+  height: 50rpx;
+}
+.define {
+  padding-top: 36rpx;
+  flex: 1;
+}
+.define image{
+  width: 50rpx;
+  height: 50rpx;
+  margin: 40rpx;
+}

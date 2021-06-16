@@ -1,0 +1,113 @@
+.container{
+
+}
+
+.order_hd {
+  display: flex;
+  flex-direction: row;
+  margin: 10rpx 5rpx 10rpx 5rpx;
+}
+
+.title_order{
+
+}
+
+.total_order{
+  width: calc(100% / 3);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #9385FB;
+  border-radius: 10rpx;
+  padding-top: 20rpx;
+  padding-bottom: 20rpx;
+}
+
+.mid_order{
+  width: calc(100% / 3);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #9385FB;
+  border-radius: 10rpx;
+  padding-top: 20rpx;
+  padding-bottom: 20rpx;
+}
+
+.Finished_order{
+  width: calc(100% / 3);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #9385FB;
+  border-radius: 10rpx;
+  padding-top: 20rpx;
+  padding-bottom: 20rpx;
+}
+
+
+.order_bd {
+  display: flex;
+  height: calc( 100vh - 100rpx );
+}
+
+.order_card{
+  margin: 5rpx;
+}
+
+.order_content{
+  display: flex;
+  flex-direction: row;
+  flex-wrap:wrap;
+  height: 100%;
+  margin: 10rpx;
+  border: 2rpx solid #9385FB;
+  border-radius: 20rpx;
+}
+
+.order_car_number{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 30%;
+  margin: 40rpx 10rpx 10rpx 10rpx;
+}
+.order_lot_name{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 30%;
+  margin: 40rpx 10rpx 10rpx 10rpx;
+}
+.order_time{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 30%;
+  margin: 20rpx 10rpx 10rpx 10rpx;
+}
+
+.three-line{
+  width: 100%;
+  margin: 10rpx 0;
+  text-align: center;
+  color: #9385FB;
+}
+
+.finish_text {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 10rpx;
+}
+.delete_text {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 10rpx;
+}

@@ -1,0 +1,109 @@
+.container {
+  display: flex;
+  flex-direction: column;
+}
+.container .home_hd{
+  height: calc(100vh/3);
+}
+.container .home_bd{
+  margin: 10rpx 0 10rpx 0;
+}
+.container .home_ft{
+  /* height: calc(100vh/3); */
+  border: 2rpx solid #9385FB;
+  border-radius: 10px;
+  margin: 5rpx;
+  padding: 10rpx;
+  padding-bottom: 0rpx;
+}
+.container .home_order{
+  /* height: calc(100vh/3); */
+  border: 2rpx solid #9385FB;
+  border-radius: 10px;
+  margin: 5rpx;
+  padding: 10rpx;
+  padding-bottom: 0rpx;
+}
+
+.container .home_hd swiper{
+  height: 100%;
+}
+.container .home_hd swiper image{
+  width: 100%;
+  height: 100%;
+}
+.container .home_bd .technology{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+}
+.container .home_bd .technology .one{
+  width: 25%;
+}
+.container .home_bd .technology .two{
+  width: 25%;
+}
+.container .home_bd .technology .three{
+  width: 25%;
+}
+.container .home_bd .technology .four{
+  width: 25%;
+}
+
+.order {
+  display: flex;
+  height: 100%;
+  flex-direction: column-reverse;
+  align-items:center;
+  align-content: center;
+}
+.order .order_text{
+  
+}
+.order .order_image{
+  width: 50rpx;
+  height: 50rpx;
+  margin: 10rpx;
+}
+
+.text_ft {
+  width: 100%;
+  height: 50rpx;
+}
+
+.used_time {
+  display: flex;
+  flex-direction: row;
+}
+.time {
+  display: flex;
+  flex-direction: row;
+}
+
+.place {
+  flex: 3;
+  margin: 20rpx 10rpx 30rpx 10rpx;
+}
+
+.point {
+  flex: 3;
+  margin: 23rpx 10rpx 30rpx 10rpx;
+}
+
+.setting {
+  flex: 1;
+  padding: 40rpx;
+}
+.setting image{
+  width: 50rpx;
+  height: 50rpx;
+}
+.define {
+  flex: 1;
+}
+.define image{
+  width: 50rpx;
+  height: 50rpx;
+  margin: 40rpx;
+}
